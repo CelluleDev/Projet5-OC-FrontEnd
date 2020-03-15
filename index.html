@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Imaginez un générateur de citations ">
+    <meta name="author" content="Imaginez un générateur de citations">
+    <title> Imaginez un générateur de citations </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Police personnalisé -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <!-- icones fontawesome cdn ----->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <h1>Le Générator Robotix</h1>
+            <div class="robot-generateur text-center">
+                <img src="img/robot-generateur.png" alt="Robot Générateur" />
+            </div>
+        </div>
+    </header>
+    <section id="section-generateur">
+        <!-- section du generateur -->
+        <div class="container-fluid">
+            <div class="d-flex row flex-lg-row flex-md-row flex-xl-row flex-sm-column justify-content-sm-around  justify-content-around text-center flex-fill">
+                <div class="liste" "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <!---- liste deroulante item ---->
+                    <h3><label> Selectionner le nombre de citations à afficher</label> </h3>
+                    <select id="listederoulante" name="listederoulante" class="form-control" text-center>
+                        <!-- form control pour afficher la liste deroulante large design -->
+                        <option name="citation-n1" value="1" selected="selected">1</option>
+                        <option name="citations-n2" value="2">2</option>
+                        <option name="citations-n3" value="3">3</option>
+                        <option name="citations-n4" value="4">4</option>
+                        <option name="citations-n5" value="5">5</option>
+                    </select>
+                </div> <!-- fin de la div liste deroulante -->
+                <div class="container-fluid">
+                <div class="d-flex row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <!-- Bouton Generateur 1 -->
+                        <button id="generateur1" class="btn btn-primary">Lancer le 1er Générateur</button><br /><br />
+                        <div id="citationG1" class="text-justify text-center">En attente de lancement du 1er générateur</div>
+                        <!------Visualiser Groupe 1 des CITATIONS 1er générateur ----->
+                    </div>
+                    <!---- fin du col flex du 1er container ----->
+                </div>
+                <!---- fin du row flex du 1er container ----->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <!--bouton Generateur 2-->
+                    <button id="generateur2" class="btn btn-primary">Lancer le 2ème Générateur</button><br /><br />
+                    <div id="citationG2" class="text-justify text-center">En attente de lancement du 2ème générateur</div>
+                    <!------Visualiser le Groupe 2 des CITATIONS 2eme générateur ----->
+                </div>
+                <!---- fin du row flex du 2eme container ----->
+            </div> <!-- fin du container fluid -->
+        </div> <!-- fin du container fluid row-->
+        
+        </div>
+        <div class="container-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <!---- 3 items ---->
+            <button class="btn btn-success" onclick='window.location.reload(false)'>Réinitialiser les générateurs</button><br><br>
+            <!---- Button pour CLEAN ------>
+        </div>
+        </div>
+        <!---- fin du row flex du 3eme container ----->
+    </section> <!-- Fin de la section du generateur -->
+    <!------------------------------Footer-------------------------------------->
+    <footer>
+        <section id="footer-liens">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- recuperation des scripts minifiés--->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
